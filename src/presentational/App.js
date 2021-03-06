@@ -1,9 +1,10 @@
+import Routes from '../Routes';
 import '../styles/App.css';
 
 function App() {
   return (
     <div className="App">
-      <h2>Kizito Mobile Tech</h2>
+      <Routes />
     </div>
   );
 }

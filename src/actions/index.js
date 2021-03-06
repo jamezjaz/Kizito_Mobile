@@ -1,4 +1,4 @@
-import { FETCH_PHONES, FILTER_PHONES } from "./actionTypes";
+import { FETCH_PHONES, FILTER_PHONES } from './actionTypes';
 
 export const fetchPhonesAction = phones => ({
   type: FETCH_PHONES,

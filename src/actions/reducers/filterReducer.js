@@ -1,14 +1,14 @@
-import { FILTER_PHONES } from "../actionTypes";
+import { FILTER_PHONES } from '../actionTypes';
 
 const filter = null;
 
 const filterReducer = (state = filter, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case FILTER_PHONES:
       return action.payload;
     default:
       return state;
-  };
+  }
 };
 
 export default filterReducer;

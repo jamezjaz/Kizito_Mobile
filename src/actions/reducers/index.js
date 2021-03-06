@@ -1,6 +1,6 @@
-import { combineReducers } from "redux";
-import filterReducer from "./filterReducer";
-import phoneReducer from "./phoneReducer";
+import { combineReducers } from 'redux';
+import filterReducer from './filterReducer';
+import phoneReducer from './phoneReducer';
 
 const rootReducer = combineReducers({
   phone: phoneReducer,
