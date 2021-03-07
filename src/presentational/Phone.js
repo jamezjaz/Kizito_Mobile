@@ -1,34 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Carousel from 'react-bootstrap/Carousel';
+import PhoneStyles from '../styles/PhoneStyles.module.css';
 
 const Phone = props => {
   const { phone } = props;
 
   return (
-    <div className="container-fluid border py-5">
-      <Carousel />
-      <div>
-        <div>
-          <h2>
-            {`Name: ${phone.name}`}
-          </h2>
-        </div>
-        <div>
-          <img src={phone.image} className="w-25" alt="phoneImg" />
-        </div>
-        <div>
-          <h5>
-            {`Category: ${phone.category}`}
-          </h5>
-        </div>
-        <div>
-          <h4>
-            {`Price: N${phone.price}`}
-          </h4>
-        </div>
-      </div>
-    </div>
+    <tbody>
+      <tr>
+        <td>
+          <div className={PhoneStyles.PhoneDetails}>
+            <div className={PhoneStyles.imgContainer}>
+              <img src={phone.image} data-testid="image" className={PhoneStyles.img} alt="PhoneImg" />
+            </div>
+            <h4 data-testid="name">{phone.name}</h4>
+            <button type="button" className="btn btn-secondary">
+              <h4>Phone Details</h4>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
   );
 };
 

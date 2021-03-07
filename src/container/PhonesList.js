@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Phone from '../presentational/Phone';
+import Slider from '../presentational/Slider';
 
 const PhonesList = props => {
   const { phones } = props;
@@ -9,9 +10,12 @@ const PhonesList = props => {
   return (
     <div>
       <h1>HOT DEALS</h1>
-      {phones.map(phone => (
-        <Phone key={phone.id} phone={phone} />
-      ))}
+      <Slider />
+      <table className="d-flex flex-wrap">
+        {phones.map(phone => (
+          <Phone key={phone.id} phone={phone} />
+        ))}
+      </table>
     </div>
   );
 };
