@@ -1,12 +1,13 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import SliderStyles from '../styles/SliderStyles.module.css';
 
 const Slider = () => (
   <div>
-    <Carousel>
+    <Carousel className={SliderStyles.carousel}>
       <Carousel.Item interval={1000}>
         <img
-          className="w-25"
+          className="w-50 rounded rounded"
           src="https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot10-3.jpg"
           alt="PhoneImg"
         />
@@ -18,7 +19,7 @@ const Slider = () => (
       </Carousel.Item>
       <Carousel.Item interval={500}>
         <img
-          className="w-25"
+          className="w-50 rounded"
           src="https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot-s8-3.jpg"
           alt="PhoneImg"
         />
@@ -30,7 +31,7 @@ const Slider = () => (
       </Carousel.Item>
       <Carousel.Item interval={1000}>
         <img
-          className="w-25"
+          className="w-50 rounded"
           src="https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot10-3.jpg"
           alt="PhoneImg"
         />
