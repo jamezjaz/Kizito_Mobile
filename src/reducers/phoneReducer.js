@@ -1,4 +1,4 @@
-import { FETCH_PHONES } from '../actionTypes';
+import { FETCH_PHONES } from '../actions/actionTypes';
 
 const initialState = {
   phones: {

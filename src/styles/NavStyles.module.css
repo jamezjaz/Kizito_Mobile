@@ -21,7 +21,7 @@
 
 .lists {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   margin: 0 10px 0 0;
 }
@@ -32,8 +32,9 @@
 }
 
 .select {
-  width: 150%;
-  height: 5vh;
+  width: 130%;
+  height: 7vh;
   border-radius: 10px;
   padding: 10px;
+  font-size: 20px;
 }

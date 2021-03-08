@@ -1,4 +1,4 @@
-import { FILTER_PHONES } from '../actionTypes';
+import { FILTER_PHONES } from '../actions/actionTypes';
 
 const filter = null;
 

@@ -3,29 +3,51 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Phone from '../presentational/Phone';
 import Slider from '../presentational/Slider';
+import { filterPhonesAction } from '../actions';
+import Nav from '../presentational/Nav';
 
 const PhonesList = props => {
-  const { phones } = props;
+  const { phones, filtered } = props;
+
+  const handleFilterChange = category => {
+    const { filter } = props;
+    filter(category);
+  };
+
+  const filteredPhones = phones.filter(phone => (
+    !!((filtered === null || filtered === phone.category))));
 
   return (
     <div>
       <h1>HOT DEALS</h1>
       <Slider />
       <table className="d-flex flex-wrap">
-        {phones.map(phone => (
+        {filteredPhones.map(phone => (
           <Phone key={phone.id} phone={phone} />
         ))}
       </table>
+      <Nav handleFilter={handleFilterChange} />
     </div>
   );
 };
 
 PhonesList.propTypes = {
   phones: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  filtered: PropTypes.string,
+  filter: PropTypes.func.isRequired,
+};
+
+PhonesList.defaultProps = {
+  filtered: null,
 };
 
 const mapStateToProps = state => ({
   phones: state.phone.phones.mobiles,
+  filtered: state.filter,
 });
 
-export default connect(mapStateToProps, null)(PhonesList);
+const mapDispatchToProps = dispatch => ({
+  filter: category => dispatch(filterPhonesAction(category)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PhonesList);
