@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import PhoneStyles from '../styles/PhoneStyles.module.css';
 
 const Phone = props => {
@@ -15,7 +16,9 @@ const Phone = props => {
             </div>
             <h4 data-testid="name">{phone.name}</h4>
             <button type="button" className="btn btn-secondary">
-              <h4>Phone Details</h4>
+              <Link className={PhoneStyles.link} to="/phoneDetails">
+                <h4>Phone Details</h4>
+              </Link>
             </button>
           </div>
         </td>
