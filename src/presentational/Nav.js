@@ -9,7 +9,7 @@ const Nav = () => (
       <Link className={NavStyles.logo} to="/">
         <img src={logo} className="rounded-circle" alt={logo} />
       </Link>
-      Kizito Mobile Tech
+      <span>Kizito Mobile Tech</span>
     </h2>
     <ul className={NavStyles.navLinks}>
       <Link className={NavStyles.lists} to="/">
