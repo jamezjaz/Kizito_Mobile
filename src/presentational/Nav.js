@@ -18,7 +18,7 @@ const Nav = props => {
   };
   return (
     <nav className={NavStyles.nav}>
-      <h2 cl>
+      <h2>
         <Link className={NavStyles.logo} to="/">
           <img src={logo} className="rounded-circle" alt={logo} />
         </Link>

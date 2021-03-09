@@ -5,6 +5,7 @@ import PhoneStyles from '../styles/PhoneStyles.module.css';
 
 const Phone = props => {
   const { phone } = props;
+  const uniqueKey = phone.id;
 
   return (
     <tbody>
@@ -16,7 +17,7 @@ const Phone = props => {
             </div>
             <h4 data-testid="name">{phone.name}</h4>
             <button type="button" className="btn btn-secondary">
-              <Link className={PhoneStyles.link} to="/phoneDetails">
+              <Link className={PhoneStyles.link} to={`/phoneDetails/${uniqueKey}`}>
                 <h4>Phone Details</h4>
               </Link>
             </button>
@@ -31,9 +32,7 @@ Phone.propTypes = {
   phone: PropTypes.shape({
     image: PropTypes.string,
     name: PropTypes.string,
-    category: PropTypes.string,
-    price: PropTypes.number,
-    type: PropTypes.string,
+    id: PropTypes.string,
   }).isRequired,
 };
 
