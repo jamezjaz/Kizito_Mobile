@@ -7,7 +7,7 @@ const PhoneDetails = ({ phones, match }) => {
   const phoneId = match.params.id;
   return (
     <div className="container-fluid details-container">
-      <h2>Phone Details</h2>
+      <h2 className="heading">Phone Details</h2>
       {phones.filter(phone => phone.id === phoneId).map(phone => (
         <table className="table" key={phone.id} style={{ width: '100%' }}>
           <thead className="thead-dark">

@@ -1,12 +1,12 @@
 .phoneDetails {
-  max-width: 416px;
+  max-width: 325px;
   padding: 10px;
   margin-bottom: 20px;
 }
 
 .imgContainer {
   min-height: 100px;
-  max-width: 416px;
+  max-width: 325px;
 }
 
 .img {

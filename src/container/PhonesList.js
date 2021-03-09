@@ -5,6 +5,7 @@ import Phone from '../presentational/Phone';
 import Slider from '../presentational/Slider';
 import { filterPhonesAction } from '../actions';
 import PhoneFilter from '../presentational/PhoneFilter';
+import PhonesListStyles from '../styles/PhonesListStyles.module.css';
 
 const PhonesList = props => {
   const { phones, filtered } = props;
@@ -18,9 +19,9 @@ const PhonesList = props => {
     !!((filtered === null || filtered === phone.category))));
 
   return (
-    <div>
+    <div className="container-fluid">
       <PhoneFilter handleFilter={handleFilterChange} />
-      <h1>HOT DEALS</h1>
+      <h1 className={PhonesListStyles.heading}>Hot Deals</h1>
       <Slider />
       <table className="d-flex flex-wrap">
         {filteredPhones.map(phone => (
