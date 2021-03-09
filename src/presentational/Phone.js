@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import PhoneStyles from '../styles/PhoneStyles.module.css';
+import add from '../assets/add.gif';
 
 const Phone = props => {
   const { phone } = props;
@@ -16,6 +17,12 @@ const Phone = props => {
               <img src={phone.image} data-testid="image" className={PhoneStyles.img} alt="PhoneImg" />
             </div>
             <h4 data-testid="name">{phone.name}</h4>
+            <div className={PhoneStyles.purchase}>
+              <h5>{`₦${phone.price}`}</h5>
+              <button type="button">
+                <img src={add} alt="add" />
+              </button>
+            </div>
             <button type="button" className="btn btn-secondary">
               <Link className={PhoneStyles.link} to={`/phoneDetails/${uniqueKey}`}>
                 <h4>Phone Details</h4>
@@ -33,6 +40,7 @@ Phone.propTypes = {
     image: PropTypes.string,
     name: PropTypes.string,
     id: PropTypes.string,
+    price: PropTypes.number,
   }).isRequired,
 };
 

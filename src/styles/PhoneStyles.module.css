@@ -21,5 +21,21 @@
 
 .link:hover {
   text-decoration: none;
+  color: rgb(44,73,77);
 }
-  
+
+.purchase {
+  display: flex;
+  justify-content: center;
+}
+
+.purchase button {
+  max-width: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 0 5px 5px;
+}
+
+.purchase img {
+  width: 100%;
+}
