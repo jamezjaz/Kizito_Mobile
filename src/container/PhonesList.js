@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Phone from '../presentational/Phone';
 import Slider from '../presentational/Slider';
 import { filterPhonesAction } from '../actions';
-import Nav from '../presentational/Nav';
+import PhoneFilter from '../presentational/PhoneFilter';
 
 const PhonesList = props => {
   const { phones, filtered } = props;
@@ -19,6 +19,7 @@ const PhonesList = props => {
 
   return (
     <div>
+      <PhoneFilter handleFilter={handleFilterChange} />
       <h1>HOT DEALS</h1>
       <Slider />
       <table className="d-flex flex-wrap">
@@ -26,7 +27,6 @@ const PhonesList = props => {
           <Phone key={phone.id} phone={phone} />
         ))}
       </table>
-      <Nav handleFilter={handleFilterChange} />
     </div>
   );
 };

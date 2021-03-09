@@ -25,16 +25,3 @@
   font-weight: bold;
   margin: 0 10px 0 0;
 }
-
-.label {
-  align-self: center;
-  border-radius: 10px;
-}
-
-.select {
-  width: 130%;
-  height: 7vh;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 20px;
-}
