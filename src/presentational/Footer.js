@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faWhatsapp,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
 import about from '../assets/about.png';
 import contactUs from '../assets/contactUs.png';
 import address from '../assets/address.png';
 import phone from '../assets/phone.png';
 import email from '../assets/email.png';
-import facebook from '../assets/facebook.png';
-import instagram from '../assets/instagram.png';
-import twitter from '../assets/twitter.png';
-import whatsapp from '../assets/whatsapp.png';
 import '../styles/Footer.css';
 
 const Footer = () => (
@@ -47,19 +50,47 @@ const Footer = () => (
       <div className="col-12 col-sm-4 text-left">
         <h5 className="footer-heading p-2 rounded">Social</h5>
         <div>
-          <img src={facebook} className="mr-2" alt="facebook" />
+          <a
+            href="https://www.facebook.com/"
+            className="facebook mr-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faFacebook} size="2x" />
+          </a>
           <small>Facebook</small>
         </div>
         <div>
-          <img src={instagram} className="mr-2" alt="instagram" />
-          <small>Instagram</small>
-        </div>
-        <div>
-          <img src={twitter} className="mr-2" alt="twitter" />
+          <a
+            href="https://www.twitter.com/jamezjaz90"
+            className="twitter mr-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faTwitter} size="2x" />
+          </a>
           <small>Twitter</small>
         </div>
         <div>
-          <img src={whatsapp} className="mr-2" alt="whatsapp" />
+          <a
+            href="https://www.instagram.com/learnbuildteach"
+            className="instagram mr-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
+          </a>
+          <small>Instagram</small>
+        </div>
+        <div>
+          <a
+            href="https://www.web.whatsapp.com"
+            className="whatsapp mr-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+          </a>
           <small>WhatsApp</small>
         </div>
       </div>
