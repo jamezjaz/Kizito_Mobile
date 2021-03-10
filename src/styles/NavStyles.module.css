@@ -31,6 +31,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  .navLinks {
+    align-self: center;
+  }
 }
 
 @media only screen and (max-width: 420px) {
