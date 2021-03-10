@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PhonesList from './container/PhonesList';
 import About from './presentational/About';
 import Error from './presentational/Error';
+import Footer from './presentational/Footer';
 import Nav from './presentational/Nav';
 import PhoneDetails from './presentational/PhoneDetails';
 
@@ -15,6 +16,7 @@ const Routes = () => (
       <Route path="/about" component={About} />
       <Route component={Error} />
     </Switch>
+    <Footer />
   </Router>
 );
 

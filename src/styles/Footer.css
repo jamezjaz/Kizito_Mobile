@@ -1,0 +1,17 @@
+footer img {
+  width: 5%;
+}
+
+.footer-heading {
+  background-color: rgb(44,73,77);
+  color: #ffffff;
+}
+
+.footer-link {
+  color: #000000;
+}
+
+.footer-link:hover {
+  color: rgb(44,73,77);
+  text-decoration: none;
+}
