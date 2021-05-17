@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/kizito-logo.png';
+import cart from '../assets/cart.png';
 import NavStyles from '../styles/NavStyles.module.css';
 
 const Nav = () => (
@@ -18,6 +19,9 @@ const Nav = () => (
       <Link className={NavStyles.lists} to="/about">
         <li>About Us</li>
       </Link>
+      <li>
+        <img src={cart} className="w-75" alt={cart} />
+      </li>
     </ul>
   </nav>
 );
