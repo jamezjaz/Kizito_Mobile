@@ -19,9 +19,11 @@ const Nav = () => (
       <Link className={NavStyles.lists} to="/about">
         <li>About Us</li>
       </Link>
-      <li>
-        <img src={cart} className="w-75" alt={cart} />
-      </li>
+      <Link to="/cart">
+        <li>
+          <img src={cart} className="w-75" alt={cart} />
+        </li>
+      </Link>
     </ul>
   </nav>
 );

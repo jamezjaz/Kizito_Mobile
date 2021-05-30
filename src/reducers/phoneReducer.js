@@ -10,6 +10,7 @@ import initialState from './constants';
 const phoneReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_PHONES:
+      // console.log(action.id, action.type);
       return {
         ...state,
         phones: action.payload,
