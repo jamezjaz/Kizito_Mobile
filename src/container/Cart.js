@@ -1,78 +1,93 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { addQuantity, removeItem, subtractQuantity } from '../actions';
-// import sortUp from '../assets/sort-up.png';
-// import sortDown from '../assets/sort-down.png';
+import sortUp from '../assets/sort-up.png';
+import sortDown from '../assets/sort-down.png';
+import cartStyles from '../styles/cartStyles.module.css';
 
-// eslint-disable-next-line
-class Cart extends Component {
+const Cart = props => {
+  const { addedItems } = props;
+  const addedItemsLen = addedItems.length;
+  console.log('Added Items', addedItems);
+  // console.log(addedItemsLen);
   // to remove the item completely
-  handleRemove = id => {
-    const { removeItem } = this.props;
+  const handleRemove = id => {
+    const { removeItem } = props;
     removeItem(id);
   };
 
   // to add the quantity
-  handleAddQuantity = id => {
-    const { addQuantity } = this.props;
+  const handleAddQuantity = id => {
+    const { addQuantity } = props;
     addQuantity(id);
   };
 
   // to subtract from the quantity
-  handleSubQuantity = id => {
-    const { subtractQuantity } = this.props;
+  const handleSubQuantity = id => {
+    const { subtractQuantity } = props;
     subtractQuantity(id);
   };
 
-  render() {
-    const { addedItems } = this.props;
-    // const addedItemsLen = addedItems.length;
-    console.log('Added Items', addedItems);
-    // console.log(addedItemsLen);
-    return (
-      <div>
-        <h3>Added Items</h3>
-        <h3>Added Items</h3>
-        <h3>Added Items</h3>
-        <h3>Added Items</h3>
-        <h3>Added Items</h3>
-        {/* {addedItemsLen
-          ? (
-            addedItems.map(item => (
-              <div key={item.id}>
-                <div>
-                  <img src={item.img} alt={item.title} />
-                </div>
-                <div>
-                  <h5>{item.name}</h5>
-                  <h4>{`₦${item.price}`}</h4>
-                </div>
-                <Link to="/cart">
-                  <img src={sortUp} alt="sort-up" />
-                </Link>
-                <Link to="/cart">
-                  <img src={sortDown} alt="sort-down" />
-                </Link>
+  return (
+    <div className={cartStyles.container}>
+      <h3>Added Items</h3>
+      {addedItemsLen
+        ? (
+          addedItems.map(item => (
+            <div key={item.id} className={cartStyles.card}>
+              <div>
+                <img src={item.image} className={cartStyles.img} alt={item.title} />
               </div>
-            ))
-          )
-          : (
-            <p>Nothing!</p>
-          )} */}
-        <div className="cart">
-          <h5>You have ordered:</h5>
-          <ul className="collection">
-            {/* {addedItemsLen} */}
-            {' '}
-            <span>items to cart</span>
-          </ul>
-        </div>
+              <div>
+                <h5>{item.name}</h5>
+                <h4>
+                  <b>
+                    Price:
+                    {' '}
+                    {`₦${item.price}`}
+                  </b>
+                </h4>
+                <span>
+                  Category:
+                  {' '}
+                  {item.category}
+                </span>
+                <p>
+                  <b>
+                    Quantity:
+                    {' '}
+                    {item.quantity}
+                  </b>
+                </p>
+              </div>
+              <Link to="/cart" onClick={() => { handleAddQuantity(item.id); }}>
+                <img src={sortUp} className={cartStyles.sortUp} alt="sort-up" />
+              </Link>
+              <Link to="/cart" onClick={() => { handleSubQuantity(item.id); }}>
+                <img src={sortDown} className={cartStyles.sortDown} alt="sort-down" />
+              </Link>
+              <button type="button" className={cartStyles.remove} onClick={() => { handleRemove(item.id); }}>
+                Remove
+              </button>
+            </div>
+          ))
+        )
+        : (
+          <p>Nothing!</p>
+        )}
+      <div className="cart">
+        <h5>You have ordered:</h5>
+        <ul className="collection">
+          {addedItemsLen}
+          {' '}
+          <span>items to cart</span>
+        </ul>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 Cart.propTypes = {
   addedItems: PropTypes.instanceOf(Array).isRequired,
@@ -86,7 +101,8 @@ Cart.propTypes = {
 // };
 
 const mapStateToProps = state => ({
-  addedItems: state.addedItems,
+  // console.log(state);
+  addedItems: state.phone.addedItems,
 });
 
 const mapDispatchToProps = dispatch => ({
