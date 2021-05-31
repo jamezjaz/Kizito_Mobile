@@ -13,7 +13,7 @@ const Phone = props => {
   const handleClick = id => {
     const { addItemsToCart } = props;
     addItemsToCart(id);
-    console.log('Added to cart');
+    // console.log('Added to cart');
   };
 
   return (

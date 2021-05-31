@@ -11,7 +11,7 @@ import DisplayTotal from '../presentational/DisplayTotal';
 const Cart = props => {
   const { addedItems } = props;
   const addedItemsLen = addedItems.length;
-  console.log('Added Items', addedItems);
+  // console.log('Added Items', addedItems);
   // console.log(addedItemsLen);
   // to remove the item completely
   const handleRemove = id => {
