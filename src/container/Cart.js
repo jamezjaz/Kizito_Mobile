@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 import { addQuantity, removeItem, subtractQuantity } from '../actions';
 import sortUp from '../assets/sort-up.png';
 import sortDown from '../assets/sort-down.png';
-import cartStyles from '../styles/cartStyles.module.css';
+import cartStyles from '../styles/CartStyles.module.css';
+import DisplayTotal from '../presentational/DisplayTotal';
 
 const Cart = props => {
   const { addedItems } = props;
@@ -85,6 +86,7 @@ const Cart = props => {
           <span>items to cart</span>
         </ul>
       </div>
+      <DisplayTotal />
     </div>
   );
 };

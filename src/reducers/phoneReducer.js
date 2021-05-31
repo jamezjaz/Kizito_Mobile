@@ -1,9 +1,11 @@
 import {
   ADD_QUANTITY,
+  ADD_SHIPPING,
   ADD_TO_CART,
   FETCH_PHONES,
   REMOVE_ITEM,
   SUB_QUANTITY,
+  SUB_SHIPPING,
 } from '../actions/actionTypes';
 import initialState from './constants';
 
@@ -38,7 +40,7 @@ const phoneReducer = (state = initialState, action) => {
     }
     case REMOVE_ITEM: {
       const itemToRemove = state.addedItems.find(item => action.id === item.id);
-      const newItems = state.addedItems.filter(item => action.id === item.id);
+      const newItems = state.addedItems.filter(item => action.id !== item.id);
       // calculating the total
       const newTotal = state.total - (itemToRemove.price * itemToRemove.quantity);
       // console.log(itemToRemove);
@@ -76,6 +78,16 @@ const phoneReducer = (state = initialState, action) => {
         total: newTotal,
       };
     }
+    case ADD_SHIPPING:
+      return {
+        ...state,
+        total: state.total + 800,
+      };
+    case SUB_SHIPPING:
+      return {
+        ...state,
+        total: state.total - 800,
+      };
     default:
       return state;
   }
