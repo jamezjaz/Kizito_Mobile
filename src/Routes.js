@@ -7,6 +7,7 @@ import Error from './presentational/Error';
 import Footer from './presentational/Footer';
 import Nav from './presentational/Nav';
 import PhoneDetails from './presentational/PhoneDetails';
+import EmailJS from './presentational/EmailJS';
 
 const Routes = () => (
   <Router>
@@ -16,6 +17,7 @@ const Routes = () => (
       <Route path="/phoneDetails/:id" component={PhoneDetails} />
       <Route path="/about" component={About} />
       <Route path="/cart" component={Cart} />
+      <Route path="/form" component={EmailJS} />
       <Route component={Error} />
     </Switch>
     <Footer />

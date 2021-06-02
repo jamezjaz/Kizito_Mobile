@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import TotalStyles from '../styles/TotalStyles.module.css';
 
 const DisplayTotal = props => {
@@ -27,7 +28,9 @@ const DisplayTotal = props => {
         </h4>
       </div>
       <div>
-        <button type="submit" className={TotalStyles.checkout}>Checkout</button>
+        <Link to="/form">
+          <button type="submit" className={TotalStyles.checkout}>Checkout</button>
+        </Link>
       </div>
     </div>
   );

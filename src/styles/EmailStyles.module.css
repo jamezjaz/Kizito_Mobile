@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+  max-width: 300px;;
+  margin: 120px auto 50px auto;
+}
+
+Form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+}
