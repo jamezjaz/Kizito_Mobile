@@ -9,3 +9,12 @@ Form {
   border-radius: 10px;
   padding: 20px;
 }
+
+.imgContainer {
+  width: 50px;
+}
+
+.img {
+  width: 50%;
+  height: 50%;
+}

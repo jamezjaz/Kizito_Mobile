@@ -7,9 +7,12 @@ import {
 } from 'semantic-ui-react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import EmailStyles from '../styles/EmailStyles.module.css';
 
-const EmailJS = () => {
+const EmailJS = props => {
+  const { addedItems } = props;
   const SERVICE_ID = 'service_g4f1wso';
   const TEMPLATE_ID = 'template_e4581uw';
   const USER_ID = 'user_B0ZbFOBqRNxomF67x4mh3';
@@ -36,6 +39,15 @@ const EmailJS = () => {
 
   return (
     <div className={EmailStyles.container}>
+      {addedItems.map(item => (
+        <div key={item.id}>
+          <div className={EmailStyles.imgContainer}>
+            <img src={item.image} className={EmailStyles.img} alt={item.name} />
+          </div>
+          <p>{item.name}</p>
+          <p>{`₦${item.price}`}</p>
+        </div>
+      ))}
       <Form onSubmit={handleOnSubmit}>
         <Form.Field
           id="form-input-control-email"
@@ -76,4 +88,12 @@ const EmailJS = () => {
   );
 };
 
-export default EmailJS;
+EmailJS.propTypes = {
+  addedItems: PropTypes.instanceOf(Array).isRequired,
+};
+
+const mapStateToProps = state => ({
+  addedItems: state.phone.addedItems,
+});
+
+export default connect(mapStateToProps, null)(EmailJS);
