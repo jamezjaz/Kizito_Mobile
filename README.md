@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
- This is a simple e-commerce online mobile phone shop. It's built with React & Redux. It's a single page application. Here, users are presented with different mobile phones and their prices. A user clicks on "Phone Details" button to see the details of a specific phone. A user can click on plus (+) button to add an item to cart. He/she can click on cart icon to check the list of added items. He/she can click on "Checkout" button to email the shop owner/manager.
+ This is simple e-commerce online mobile phone shop. It's built with React & Redux. It's a single-page application. Here, users are presented with different mobile phones and their prices. A user clicks on the "Phone Details" button to see the details of a specific phone. A user can click on the plus (+) button to add an item to the cart. He/she can click on the sort up or sort down arrow to increase or decrease the number of items. He/she can click on the cart icon to check the list of added items. He/she can click on the "Checkout" button to email the shop owner/manager.
 
 ## Preview
 - Index Page
