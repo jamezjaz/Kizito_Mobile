@@ -22,7 +22,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/jamezjaz/Recipes">
+  <a href="https://github.com/jamezjaz/Kizito_Mobile">
     <img src="./src/assets/bg-img.jpg" alt="Logo" width="100" height="100">
   </a>
 
@@ -72,7 +72,7 @@
 ![kizito-about](https://user-images.githubusercontent.com/57812000/121818864-c6050f80-cc81-11eb-8cf9-cbec7fbf6d6c.png)
 
 ## Live Demo
-It's deployed [HERE]() on Netlify
+It's deployed [HERE](https://kizitomobiletechnologies.netlify.app/) on Netlify
 
 ## Built With
 This project was built using these technologies.
