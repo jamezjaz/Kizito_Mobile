@@ -10,7 +10,7 @@ const About = () => (
       <h2 className={AboutStyles.heading}>About Us</h2>
       <div className={AboutStyles.content}>
         <p className={AboutStyles.para}>
-          Kizito Mobile Technology (RC NO: XXXXXXX) is Nigeria’s retail
+          Kizito Mobile Technology (RC NO: BN 2561504) is Nigeria’s retail
           store offering warranty phones, tablets, electronics
           gadgets, consoles and accessories. We sell both new and
           fairly-used phones. We are committed to delivering quality

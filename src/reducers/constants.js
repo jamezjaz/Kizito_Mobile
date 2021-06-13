@@ -1,3 +1,30 @@
+import InfinixHot8 from '../assets/infinix-hot-8.jpg';
+import InfinixHot9 from '../assets/infinix-hot-9.jpg';
+import InfinixHot10 from '../assets/infinix-hot-10.jpg';
+import SamGS21 from '../assets/samsung-s21-5G.png';
+import SamGS20 from '../assets/samsung-s20-5G.jpg';
+import SamGS21Ultra from '../assets/samsung-s21-Ultra.jpg';
+import SamGSA51 from '../assets/samsung-A51.jpg';
+import Sam20Ultra from '../assets/samsung-Note20-Ultra-5G.jpg';
+import SamZFold2 from '../assets/samsung-z-fold2.jpg';
+import SamZFlip from '../assets/smasung-z-flip.png';
+import TecnoPova from '../assets/tecno-pova.jpg';
+import TecnoSpark6 from '../assets/tecno-spark6.jpg';
+import TecnoSpark5Pro from '../assets/tecno-spark-5-pro.jpg';
+import TecnoCamon16 from '../assets/tecno-camon16-premier.jpg';
+import TecnoPop4 from '../assets/tecno-pop4.png';
+import TecnoPouvoir4Pro from '../assets/tecno-pouvoir-4-pro.jpg';
+import Iphone6 from '../assets/iphone-6.jpg';
+import Iphone6S from '../assets/iphone-6S.jpg';
+import Iphone6SPlus from '../assets/iphone-6S-plus.png';
+import Iphone7Plus from '../assets/iphone7-plus.jpg';
+import Iphone8 from '../assets/iphone8.jpg';
+import IphoneSE from '../assets/iphone-SE.jpg';
+import IphoneX from '../assets/iphoneX.jpg';
+import IphoneXSMax from '../assets/iphoneXS-max.png';
+import Iphone11ProMax from '../assets/iphone11-pro-max.png';
+import Iphone12ProMax from '../assets/iphone12-pro-max.jpg';
+
 const initialState = {
   phones: {
     mobiles: [
@@ -7,7 +34,7 @@ const initialState = {
         category: 'Infinix',
         price: 40000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot-s8-3.jpg',
+        image: InfinixHot8,
         mainSpec: [
           { os: 'Android 9.0 (Pie), XOS 5.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -27,7 +54,7 @@ const initialState = {
         category: 'Infinix',
         price: 45000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot9-2.jpg',
+        image: InfinixHot9,
         mainSpec: [
           { os: 'Android 10, XOS 6.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -47,7 +74,7 @@ const initialState = {
         category: 'Infinix',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot10-3.jpg',
+        image: InfinixHot10,
         mainSpec: [
           { os: 'Android 10, XOS 6.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -67,7 +94,7 @@ const initialState = {
         category: 'Infinix',
         price: 40000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot-s8-3.jpg',
+        image: InfinixHot8,
         mainSpec: [
           { os: 'Android 9.0 (Pie), XOS 5.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -87,7 +114,7 @@ const initialState = {
         category: 'Infinix',
         price: 45000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot9-2.jpg',
+        image: InfinixHot9,
         mainSpec: [
           { os: 'Android 10, XOS 6.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -107,7 +134,7 @@ const initialState = {
         category: 'Infinix',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot10-3.jpg',
+        image: InfinixHot10,
         mainSpec: [
           { os: 'Android 10, XOS 6.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -127,7 +154,7 @@ const initialState = {
         category: 'Infinix',
         price: 40000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot-s8-3.jpg',
+        image: InfinixHot8,
         mainSpec: [
           { os: 'Android 9.0 (Pie), XOS 5.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -147,7 +174,7 @@ const initialState = {
         category: 'Infinix',
         price: 45000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot9-2.jpg',
+        image: InfinixHot9,
         mainSpec: [
           { os: 'Android 10, XOS 6.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -167,7 +194,7 @@ const initialState = {
         category: 'Infinix',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot10-3.jpg',
+        image: InfinixHot10,
         mainSpec: [
           { os: 'Android 10, XOS 6.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -187,7 +214,7 @@ const initialState = {
         category: 'Infinix',
         price: 40000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot-s8-3.jpg',
+        image: InfinixHot8,
         mainSpec: [
           { os: 'Android 9.0 (Pie), XOS 5.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -207,7 +234,7 @@ const initialState = {
         category: 'Infinix',
         price: 45000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot9-2.jpg',
+        image: InfinixHot9,
         mainSpec: [
           { os: 'Android 10, XOS 6.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -227,7 +254,7 @@ const initialState = {
         category: 'Infinix',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/infinix/infinix-hot10-3.jpg',
+        image: InfinixHot10,
         mainSpec: [
           { os: 'Android 10, XOS 6.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -247,7 +274,7 @@ const initialState = {
         category: 'Samsung',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://images.samsung.com/africa_en/smartphones/galaxy-s21/buy/galaxy-s21-phantom-violet.png',
+        image: SamGS21,
         mainSpec: [
           { os: 'Android 11, One UI 3.1' },
           { sim: 'Single SIM (Nano-SIM and/or eSIM) or Dual SIM (Nano-SIM and/or eSIM, dual stand-by)' },
@@ -267,7 +294,7 @@ const initialState = {
         category: 'Samsung',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://img.router-switch.com/media/customoptions/options/426/1817/samsung-galaxy_s20-fe-5g-sm-g7810-blue.jpg',
+        image: SamGS20,
         mainSpec: [
           { os: 'Android 10, upgradable to Android 11, One UI 3.1' },
           { sim: 'Single SIM (Nano-SIM) or Hybrid Dual SIM (Nano-SIM, dual stand-by)' },
@@ -287,7 +314,7 @@ const initialState = {
         category: 'Samsung',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/Z/B/_1616122378.jpg',
+        image: SamGS21Ultra,
         mainSpec: [
           { os: 'Android 11, One UI 3.1' },
           { sim: 'Single SIM (Nano-SIM and/or eSIM) or Dual SIM (Nano-SIM and/or eSIM, dual stand-by)' },
@@ -307,7 +334,7 @@ const initialState = {
         category: 'Samsung',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www.zdnet.com/a/hub/i/r/2020/09/29/d424c7b4-6344-4d20-b0e2-0ff7ddfbd14e/resize/1200x900/bf69247e069c8e856238e778733adf29/samsung-galaxy-a51-on-vodafone-header.jpg',
+        image: SamGSA51,
         mainSpec: [
           { os: 'Android 10, upgradable to Android 11, One UI 3.0' },
           { sim: 'Single SIM (Nano-SIM and/or eSIM) or Hybrid Dual SIM (Nano-SIM, dual stand-by)' },
@@ -327,7 +354,7 @@ const initialState = {
         category: 'Samsung',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/H/B/63606_1597958520.jpg',
+        image: Sam20Ultra,
         mainSpec: [
           { os: 'Android 10, upgradable to Android 11, One UI 3.1' },
           { sim: 'Single SIM (Nano-SIM) or Dual SIM (Nano-SIM, dual stand-by)' },
@@ -347,7 +374,7 @@ const initialState = {
         category: 'Samsung',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold2-5g.jpg',
+        image: SamZFold2,
         mainSpec: [
           { os: 'Android 10, upgradable to Android 11, One UI 3.1' },
           { sim: 'Nano-SIM and/or eSIM' },
@@ -367,7 +394,7 @@ const initialState = {
         category: 'Samsung',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www.gizmochina.com/wp-content/uploads/2020/01/galaxy-z-flip_h-500x500.jpg',
+        image: SamZFlip,
         mainSpec: [
           { os: 'Android 10, upgradable to Android 11, One UI 3.0' },
           { sim: 'Nano-SIM, eSIM' },
@@ -387,7 +414,7 @@ const initialState = {
         category: 'Tecno',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www.droidafrica.net/wp-content/uploads/2020/12/Tecno-Pova-2-droidafrica.jpg',
+        image: TecnoPova,
         mainSpec: [
           { os: 'Android 10, HIOS 7.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -407,7 +434,7 @@ const initialState = {
         category: 'Tecno',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'data:image/jpeg;base64,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',
+        image: TecnoSpark6,
         mainSpec: [
           { os: 'Android 10, HIOS 7.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -427,7 +454,7 @@ const initialState = {
         category: 'Tecno',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www.droidafrica.net/wp-content/uploads/2020/08/Tecno-Camon-16-Premier-Droidafrica-2.jpg',
+        image: TecnoCamon16,
         mainSpec: [
           { os: 'Android 10, HIOS 6.0' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -447,7 +474,7 @@ const initialState = {
         category: 'Tecno',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://phoneaqua.com/products/Tecno%20Pop%204%20Pro.PNG',
+        image: TecnoPop4,
         mainSpec: [
           { os: 'Android 10 (Go edition), HIOS' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by)' },
@@ -467,7 +494,7 @@ const initialState = {
         category: 'Tecno',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/pics/tecno/tecno-spark-5-5.jpg',
+        image: TecnoSpark5Pro,
         mainSpec: [
           { os: 'Android 10, HIOS 6.1' },
           { sim: 'Dual SIM (Nano-SIM, dual stand-by))' },
@@ -487,7 +514,7 @@ const initialState = {
         category: 'Tecno',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://cdn1.smartprix.com/rx-iJjktnWNO-w1200-h1200/tecno-pouvoir-4-pro.jpg',
+        image: TecnoPouvoir4Pro,
         mainSpec: [
           { os: 'Android 10, HIOS 6.0' },
           { sim: 'Dual SIM' },
@@ -507,7 +534,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-6-4.jpg',
+        image: Iphone6,
         mainSpec: [
           { os: 'iOS 8, upgradable to iOS 12.4.6' },
           { sim: 'Nano-SIM' },
@@ -527,7 +554,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://static.toiimg.com/thumb/msid-54058409,width-240,resizemode-4,imgv-0/Apple-iPhone-6s-Plus-64GB.jpg',
+        image: Iphone6S,
         mainSpec: [
           { os: 'iOS 9, upgradable to iOS 14.4.2' },
           { sim: 'Nano-SIM' },
@@ -547,7 +574,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP727/SP727-iphone6s-plus-gray-select-2015.png',
+        image: Iphone6SPlus,
         mainSpec: [
           { os: 'iOS 9, upgradable to iPadOS 14.4.2' },
           { sim: 'Nano-SIM' },
@@ -567,7 +594,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://m.media-amazon.com/images/I/51WpqREMePL.jpg',
+        image: IphoneSE,
         mainSpec: [
           { os: 'iOS 9.3.2, upgradable to iOS 14.4.2' },
           { sim: 'Nano-SIM' },
@@ -587,7 +614,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/I/p/Iphone-7-Plus---128gb---Red-7850939.jpg',
+        image: Iphone7Plus,
         mainSpec: [
           { os: 'iOS 10.0.1, upgradable to iOS 14.4.2' },
           { sim: 'Nano-SIM' },
@@ -607,7 +634,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://images.macrumors.com/article-new/2018/04/product-red-iphone-8-and-8-plus.jpg',
+        image: Iphone8,
         mainSpec: [
           { os: 'iOS 11, upgradable to iOS 14.4.2' },
           { sim: 'Nano-SIM' },
@@ -627,7 +654,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www.gizmochina.com/wp-content/uploads/2017/09/iPhone-X-Profile-Page-550x550.jpg',
+        image: IphoneX,
         mainSpec: [
           { os: 'iOS 11.1.1, upgradable to iOS 14.4.2' },
           { sim: 'Nano-SIM' },
@@ -647,7 +674,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www.gizmochina.com/wp-content/uploads/2018/09/Apple-iPhone-Xs-Max-503x503.png',
+        image: IphoneXSMax,
         mainSpec: [
           { os: 'iOS 12, upgradable to iOS 14.4.2' },
           { sim: 'Single SIM (Nano-SIM and/or eSIM) or Dual SIM (Nano-SIM, dual stand-by) - for China' },
@@ -667,7 +694,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-Max-1-500x500.jpg',
+        image: Iphone11ProMax,
         mainSpec: [
           { os: 'iOS 13, upgradable to iOS 14.4.2' },
           { sim: 'Single SIM (Nano-SIM and/or eSIM) or Dual SIM (Nano-SIM, dual stand-by) - for China' },
@@ -687,7 +714,7 @@ const initialState = {
         category: 'Apple',
         price: 55000,
         type: 'New and fairly-used',
-        image: 'https://www.amaget.com/wp-content/uploads/2020/12/iphone-12-pro-max-gold-hero.png',
+        image: Iphone12ProMax,
         mainSpec: [
           { os: 'iOS 14.1, upgradable to iOS 14.4.2' },
           { sim: 'Single SIM (Nano-SIM and/or eSIM) or Dual SIM (Nano-SIM, dual stand-by) - for China' },

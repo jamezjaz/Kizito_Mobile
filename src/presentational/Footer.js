@@ -62,7 +62,7 @@ const Footer = () => (
         </div>
         <div>
           <a
-            href="https://www.twitter.com/jamezjaz90"
+            href="https://www.twitter.com/"
             className="twitter mr-2"
             target="_blank"
             rel="noreferrer"
@@ -73,7 +73,7 @@ const Footer = () => (
         </div>
         <div>
           <a
-            href="https://www.instagram.com/learnbuildteach"
+            href="https://www.instagram.com/"
             className="instagram mr-2"
             target="_blank"
             rel="noreferrer"
@@ -84,7 +84,7 @@ const Footer = () => (
         </div>
         <div>
           <a
-            href="https://www.web.whatsapp.com"
+            href="https://api.whatsapp.com/send/?phone=2348064497094&text=I%27m+interested+in+your+products&app_absent=0"
             className="whatsapp mr-2"
             target="_blank"
             rel="noreferrer"
