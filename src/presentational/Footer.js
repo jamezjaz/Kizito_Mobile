@@ -51,7 +51,7 @@ const Footer = () => (
         <h5 className="footer-heading p-2 rounded">Social</h5>
         <div>
           <a
-            href="https://www.facebook.com/"
+            href="https://web.facebook.com/kizito.odufu"
             className="facebook mr-2"
             target="_blank"
             rel="noreferrer"
@@ -84,7 +84,7 @@ const Footer = () => (
         </div>
         <div>
           <a
-            href="https://api.whatsapp.com/send/?phone=2348064497094&text=I%27m+interested+in+your+products&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=2348106334661&text=I%27m+interested+in+your+products&app_absent=0"
             className="whatsapp mr-2"
             target="_blank"
             rel="noreferrer"
