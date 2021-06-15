@@ -43,7 +43,7 @@ const Footer = () => (
           </div>
           <div>
             <img src={email} className="mr-2" alt="email" />
-            <small>KizitoMobileTech@gmail.com</small>
+            <small>odufukizito92@gmail.com</small>
           </div>
         </div>
       </div>
