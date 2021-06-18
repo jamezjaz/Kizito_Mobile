@@ -1,0 +1,29 @@
+footer img {
+  width: 5%;
+}
+
+.footer-heading {
+  background-color: rgb(44, 73, 77);
+  color: #fff;
+}
+
+.footer-link {
+  color: #000;
+}
+
+.footer-link:hover {
+  color: rgb(44, 73, 77);
+  text-decoration: none;
+}
+
+.twitter {
+  color: #49a1eb;
+}
+
+.instagram {
+  color: #000;
+}
+
+.whatsapp {
+  color: rgb(74, 197, 87);
+}

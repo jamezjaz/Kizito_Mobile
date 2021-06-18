@@ -1,0 +1,65 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(44, 73, 77);
+  color: white;
+  font-weight: bolder;
+
+  /* padding: 10px 30px; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.lists {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+}
+
+.counter {
+  position: absolute;
+  color: white;
+  right: 25px;
+  bottom: 60px;
+}
+
+@media only screen and (max-width: 650px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navLinks {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .nav h2,
+  .nav ul li {
+    font-size: 20px;
+  }
+
+  .nav h2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  .navLinks {
+    display: block;
+  }
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.container {
+  margin: 10rem 0 2rem 0;
+}
+
+.heading {
+  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.para {
+  width: 50%;
+  text-align: start;
+  margin-right: auto;
+}
+
+.imgContainer,
+.vision,
+.mission {
+  width: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}

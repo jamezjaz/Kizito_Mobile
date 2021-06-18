@@ -1,0 +1,42 @@
+.phoneDetails {
+  max-width: 325px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.imgContainer {
+  min-height: 100px;
+  max-width: 325px;
+}
+
+.img {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: rgb(44, 73, 77);
+}
+
+.purchase {
+  display: flex;
+  justify-content: center;
+}
+
+.purchase button {
+  max-width: 40px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 0 5px 5px;
+}
+
+.purchase img {
+  width: 100%;
+}
