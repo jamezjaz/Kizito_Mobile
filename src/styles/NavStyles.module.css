@@ -28,6 +28,13 @@
   margin: 0 10px 0 0;
 }
 
+.counter {
+  position: absolute;
+  color: white;
+  right: 25px;
+  bottom: 60px;
+}
+
 @media only screen and (max-width: 650px) {
   .nav {
     display: flex;
